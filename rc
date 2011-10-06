@@ -1,0 +1,15 @@
+"load default (cli) settings/mappings
+source $VIM_PATH/config/settings
+source $VIM_PATH/config/mappings
+
+if has("gui_running") && isdirectory("$VIM_PATH/config/gui")
+  source $VIM_PATH/config/settings
+  source $VIM_PATH/config/mappings
+endif
+
+"load local override settings for the user
+if isdirectory("$VIM_PATH/config/$USER")
+  source $VIM_PATH/config/$USER/settings
+  source $VIM_PATH/config/$USER/mappings
+end
+
