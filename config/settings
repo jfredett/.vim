@@ -1,13 +1,28 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" config/settings
+""" 
+""" General settings for the command line
+"""
+""" No extensive explanation of these options will be given. Most of them are
+""" trivially understandable given a few minutes of reading :help
+""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " No Vi Compatibility
 set nocompatible
-set backspace=indent,eol,start
-set paste
+" Load plugins 
+call pathogen#infect()
 
-"syntax highlighting
+
+
+" syntax highlighting
 syntax on
 set t_Co=256
 
+set backspace=indent,eol,start
+set paste
+
+" 80 characters, damnit
+set textwidth=80
 
 " Load plugins for filetypes
 filetype plugin indent on
@@ -39,8 +54,7 @@ set tabstop=2
 set splitbelow
 set splitright
 
-" Store temporary files in a central spot
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-
-
+" Don't use swapfiles
+set nobackup
+set nowritebackup
+set noswapfile
