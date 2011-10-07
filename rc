@@ -5,7 +5,7 @@ source $VIM_PATH/config/commands
 source $VIM_PATH/config/functions
 source $VIM_PATH/config/statusline
 
-if has("gui_running") && isdirectory("$VIM_PATH/config/gui")
+if has("gui_running") && isdirectory($VIM_PATH . '/config/gui')
   source $VIM_PATH/config/gui/settings
   source $VIM_PATH/config/gui/functions
   source $VIM_PATH/config/gui/mappings
@@ -14,7 +14,7 @@ if has("gui_running") && isdirectory("$VIM_PATH/config/gui")
 endif
 
 "load local override settings for the user
-if isdirectory("$VIM_PATH/config/$USER")
+if isdirectory($VIM_PATH . '/config/' . $USER)
   source $VIM_PATH/config/$USER/settings
   source $VIM_PATH/config/$USER/functions
   source $VIM_PATH/config/$USER/mappings
