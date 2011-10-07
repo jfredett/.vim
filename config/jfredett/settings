@@ -1,0 +1,4 @@
+" Don't use swapfiles
+set nobackup
+set nowritebackup
+set noswapfile

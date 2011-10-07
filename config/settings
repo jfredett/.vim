@@ -54,7 +54,3 @@ set tabstop=2
 set splitbelow
 set splitright
 
-" Don't use swapfiles
-set nobackup
-set nowritebackup
-set noswapfile
