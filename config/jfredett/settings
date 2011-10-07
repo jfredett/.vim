@@ -2,3 +2,5 @@
 set nobackup
 set nowritebackup
 set noswapfile
+
+let g:background_style='dark'
