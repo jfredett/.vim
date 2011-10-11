@@ -4,6 +4,8 @@ map <leader>R :NERDTreeFind<CR>
 
 " Open tree on current directory
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+" open taglist
+map <leader>tl <esc>:TlistToggle<CR>
 
 
 " Because I love these from TM
