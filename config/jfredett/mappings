@@ -5,5 +5,5 @@ command! Q q
 command! WQ wq
 
 "flop the background from light->dark or vv.
-nmap <C-g> <ESC>:BG<CR> 
+nmap <silent> <C-g> <ESC>:BG<CR>
 
