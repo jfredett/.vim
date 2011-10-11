@@ -1,5 +1,5 @@
 [submodule "autoload/pathogen"]
-	path = autoload/pathogen
+	path = bundle/pathogen
 	url = https://github.com/tpope/vim-pathogen.git
 [submodule "bundle/rails"]
 	path = bundle/rails
