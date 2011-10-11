@@ -26,7 +26,6 @@ colorscheme solarized
 
 
 set backspace=indent,eol,start
-set paste
 
 " 80 characters, damnit
 set textwidth=80
