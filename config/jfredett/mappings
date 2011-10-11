@@ -7,3 +7,6 @@ command! WQ wq
 "flop the background from light->dark or vv.
 nmap <silent> <C-g> <ESC>:BG<CR>
 
+"match key as % sucks
+nmap  <leader>m %
+nmap  <leader>f zf%
