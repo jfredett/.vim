@@ -52,3 +52,6 @@
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = https://github.com/mhz/vim-matchit.git
+[submodule "bundle/vim-clojure"]
+	path = bundle/vim-clojure
+	url = https://github.com/vim-scripts/VimClojure.git
