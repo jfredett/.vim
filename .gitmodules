@@ -55,3 +55,12 @@
 [submodule "bundle/vim-clojure"]
 	path = bundle/vim-clojure
 	url = https://github.com/vim-scripts/VimClojure.git
+[submodule "bundle/rubyblock-text-object"]
+	path = bundle/rubyblock-text-object
+	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
+[submodule "bundle/indext-text-object"]
+	path = bundle/indext-text-object
+	url = https://github.com/michaeljsmith/vim-indent-object.git
+[submodule "bundle/argument-text-object"]
+	path = bundle/argument-text-object
+	url = https://github.com/vim-scripts/argtextobj.vim.git
