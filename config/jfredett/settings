@@ -4,3 +4,10 @@ set nowritebackup
 set noswapfile
 
 let g:background_style='dark'
+
+"setup vimclojure
+let vimclojure#WantNailgun = 1
+let vimclojure#SplitPos = 'bottom'
+let vimclojure#SplitSize = 15
+let vimclojure#NailgunClient = '/usr/local/bin/ng'
+
