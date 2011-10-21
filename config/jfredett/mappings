@@ -10,3 +10,6 @@ nmap <silent> <C-g> <ESC>:BG<CR>
 "match key as % sucks
 nmap  <leader>m %
 nmap  <leader>f zf%
+
+"insert a 'binding.pry' on the line above the current
+nmap <leader>db Obinding.pry<ESC>=jj
