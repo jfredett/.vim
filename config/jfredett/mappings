@@ -11,8 +11,11 @@ nmap <silent> <C-g> <ESC>:BG<CR>
 nmap  <leader>m %
 nmap  <leader>f zf%
 
+"insert a 'debugger' on the line above the current
+nmap <silent> <leader>db Odebugger<ESC>=jj
+
 "insert a 'binding.pry' on the line above the current
-nmap <leader>db Obinding.pry<ESC>=jj
+nmap <silent> <leader>r<space> Obinding.pry<ESC>=jj
 
 "remap nerdtree toggler from the default
 nmap <silent> <leader>d<space> :execute 'NERDTreeToggle '. getcwd()<CR>
