@@ -20,3 +20,4 @@ nmap <silent> <leader>r<space> Obinding.pry<ESC>=jj
 "remap nerdtree toggler from the default
 nmap <silent> <leader>d<space> :execute 'NERDTreeToggle '. getcwd()<CR>
 unmap <leader>d
+

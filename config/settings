@@ -11,6 +11,7 @@
 set nocompatible
 " Load plugins 
 call pathogen#infect()
+call pathogen#helptags()
 
 
 
