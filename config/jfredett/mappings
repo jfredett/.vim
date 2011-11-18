@@ -13,3 +13,7 @@ nmap  <leader>f zf%
 
 "insert a 'binding.pry' on the line above the current
 nmap <leader>db Obinding.pry<ESC>=jj
+
+"remap nerdtree toggler from the default
+nmap <silent> <leader>d<space> :execute 'NERDTreeToggle '. getcwd()<CR>
+unmap <leader>d
