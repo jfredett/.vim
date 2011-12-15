@@ -13,3 +13,6 @@ let vimclojure#NailgunClient = '/usr/local/bin/ng'
 
 "more bashy tab complete
 set wildmenu
+
+"reduce error message noise
+set shortmess=aIA
