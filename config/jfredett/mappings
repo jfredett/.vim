@@ -21,3 +21,7 @@ nmap <silent> <leader>r<space> Obinding.pry<ESC>=jj
 nmap <silent> <leader>d<space> :execute 'NERDTreeToggle '. getcwd()<CR>
 unmap <leader>d
 
+"remap mark from ` to ', and vice versa, so we get the better behavior more
+"easily.
+nnoremap ' `
+nnoremap ` '
