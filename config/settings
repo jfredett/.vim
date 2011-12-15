@@ -13,7 +13,8 @@ set nocompatible
 call pathogen#infect()
 call pathogen#helptags()
 
-
+" better buffer management
+set hidden
 
 " syntax highlighting
 syntax on
