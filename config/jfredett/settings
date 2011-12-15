@@ -11,3 +11,5 @@ let vimclojure#SplitPos = 'bottom'
 let vimclojure#SplitSize = 15
 let vimclojure#NailgunClient = '/usr/local/bin/ng'
 
+"more bashy tab complete
+set wildmenu
