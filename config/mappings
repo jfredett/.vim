@@ -7,10 +7,6 @@ map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 " open taglist
 map <leader>tl <esc>:TlistToggle<CR>
 
-
-" Because I love these from TM
-imap <C-L> <space>=><space>
-
 " Symbols and strings
 nmap <leader>: ds"i:<Esc>e
 nmap <leader>" bhxcsw"
