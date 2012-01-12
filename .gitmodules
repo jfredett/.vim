@@ -90,4 +90,7 @@
 	path = bundle/vim-ruby
 	url = git@github.com:vim-ruby/vim-ruby
   ignore = untracked
-
+[submodule "bundle/buffergator"]
+	path = bundle/buffergator
+	url = git@github.com:jeetsukumaran/vim-buffergator
+  ignore = untracked

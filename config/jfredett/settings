@@ -16,3 +16,17 @@ set wildmenu
 
 "reduce error message noise
 set shortmess=aIA
+
+
+"buffergator settings
+
+"don't automap
+let g:buffergator_suppress_keymaps=1
+"put it on the right
+let g:buffergator_viewport_split_policy = "R"
+"make it smaller
+let g:buffergator_split_size = 30
+"show only, and sort by, the basename
+let g:buffergator_display_regime = "basename"
+let g:buffergator_sort_regime = "basename"
+
