@@ -86,3 +86,8 @@
 	path = bundle/argument-text-object
 	url = https://github.com/vim-scripts/argtextobj.vim.git
   ignore = untracked
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = git@github.com:vim-ruby/vim-ruby
+  ignore = untracked
+
