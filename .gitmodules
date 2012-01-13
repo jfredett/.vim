@@ -72,7 +72,7 @@
   ignore = untracked
 [submodule "bundle/vim-clojure"]
 	path = bundle/vim-clojure
-	url = https://github.com/vim-scripts/VimClojure.git
+	url = git://github.com/vim-scripts/VimClojure.git
   ignore = untracked
 [submodule "bundle/rubyblock-text-object"]
 	path = bundle/rubyblock-text-object

@@ -35,4 +35,4 @@ nmap <silent> B :cprevious<CR>
 nmap <silent> <leader>b<space> :BuffergatorToggle<CR>
 
 
-
+let maplocalleader = ","

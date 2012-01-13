@@ -62,3 +62,15 @@ set tabstop=2
 set splitbelow
 set splitright
 
+" vimclojure stuff. stolen^H^H^H^H^H^H *hackhack* borrowed from daveray's
+" vimclojure-easy. All proper props to him
+let vimclojure#FuzzyIndent = 1
+let vimclojure#HighlightBuiltins = 1
+let vimclojure#HighlightContrib = 1
+let vimclojure#DynamicHighlighting = 1
+let vimclojure#ParenRainbow = 1
+let vimclojure#WantNailgun = 1
+let vimclojure#NailgunClient = $HOME . "/.vim/lib/vimclojure-nailgun-client/ng"
+let vimclojure#SplitPos="bottom"
+let vimclojure#SplitSize=10
+
