@@ -102,3 +102,7 @@
 	path = bundle/vim-textobj-rubyblock.git
 	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
   ignore = untracked
+[submodule "bundle/c.vim"]
+	path = bundle/c.vim
+	url = git://github.com/vim-scripts/c.vim.git
+  ignore = untracked

@@ -24,3 +24,5 @@ let g:buffergator_split_size = 30
 let g:buffergator_display_regime = "basename"
 let g:buffergator_sort_regime = "basename"
 
+
+let g:C_MapLeader = ','
