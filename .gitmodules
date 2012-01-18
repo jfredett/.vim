@@ -106,3 +106,7 @@
 	path = bundle/c.vim
 	url = git://github.com/vim-scripts/c.vim.git
   ignore = untracked
+[submodule "bundle/vim-puppet"]
+	path = bundle/vim-puppet
+	url = git://github.com/rodjek/vim-puppet.git
+  ignore = untracked
