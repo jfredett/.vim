@@ -26,3 +26,6 @@ let g:buffergator_sort_regime = "basename"
 
 
 let g:C_MapLeader = ','
+
+"use the second set of keybinds, to avoid clashing
+let g:slimv_keybindings=2
