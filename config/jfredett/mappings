@@ -12,7 +12,7 @@ nmap  <leader>m %
 nmap  <leader>f zf%
 
 "insert a 'debugger' on the line above the current
-nmap <silent> <leader>db Odebugger<ESC>=jj
+nmap <silent> <leader>db Odebugger; 9001<ESC>=jj
 
 "insert a 'binding.pry' on the line above the current
 nmap <silent> <leader>r<space> Obinding.pry<ESC>=jj
@@ -33,3 +33,6 @@ nmap <silent> F :cnext<CR>
 nmap <silent> B :cprevious<CR>
 
 nmap <silent> <leader>b<space> :BuffergatorToggle<CR>
+
+
+
