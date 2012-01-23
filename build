@@ -1,0 +1,21 @@
+#!/bin/bash
+
+make clean
+make distclean
+
+./configure                         \
+  --enable-pythoninterp=yes         \
+  --enable-rubyinterp=yes           \
+  --enable-luainterp=yes            \
+  --enable-mzschemeinterp=yes       \
+  --with-modified-by="Joe Fredette" \
+  --with-compiledby="$USER"         \
+  --enable-gui=no                   \
+  --disable-selinux                 \
+  --enable-cscope                   \
+  --disable-gtktest
+
+RUBY_LIBS="-framework Ruby"
+
+make
+
