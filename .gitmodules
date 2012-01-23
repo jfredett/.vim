@@ -110,3 +110,9 @@
 	path = bundle/vim-puppet
 	url = git://github.com/rodjek/vim-puppet.git
   ignore = untracked
+[submodule "bundle/vim-rake"]
+	path = bundle/vim-rake
+	url = git://github.com/tpope/vim-rake.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
