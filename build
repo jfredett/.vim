@@ -5,7 +5,9 @@ make distclean
 
 ./configure                         \
   --enable-pythoninterp=yes         \
+  --enable-python3interp=yes         \
   --enable-rubyinterp=yes           \
+  --enable-multibyte=yes            \
   --enable-luainterp=yes            \
   --enable-mzschemeinterp=yes       \
   --with-modified-by="Joe Fredette" \
