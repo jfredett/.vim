@@ -129,3 +129,4 @@
 [submodule "bundle/lein-vim"]
 	path = bundle/lein-vim
 	url = git://github.com/liquidz/lein-vim.git
+  ignore = untracked
