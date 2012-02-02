@@ -5,7 +5,7 @@ make distclean
 
 ./configure                         \
   --enable-pythoninterp=yes         \
-  --enable-python3interp=yes         \
+  --enable-python3interp=yes        \
   --enable-rubyinterp=yes           \
   --enable-multibyte=yes            \
   --enable-luainterp=yes            \
@@ -15,7 +15,8 @@ make distclean
   --enable-gui=no                   \
   --disable-selinux                 \
   --enable-cscope                   \
-  --disable-gtktest
+  --disable-gtktest                 \
+  --with-features=huge            
 
 RUBY_LIBS="-framework Ruby"
 
