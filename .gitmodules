@@ -130,3 +130,7 @@
 	path = bundle/lein-vim
 	url = git://github.com/liquidz/lein-vim.git
   ignore = untracked
+[submodule "bundle/thrift"]
+	path = bundle/thrift
+	url = git://github.com/sprsquish/thrift.vim.git
+  ignore = untracked
