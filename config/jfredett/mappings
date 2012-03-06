@@ -36,3 +36,5 @@ nmap <silent> <leader>b<space> :BuffergatorToggle<CR>
 
 
 let maplocalleader = ","
+
+inoremap lkjh <Esc>
