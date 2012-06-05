@@ -29,7 +29,7 @@ nnoremap ` '
 
 nmap <silent> <leader>a<space> :Ack <cword><CR>
 
-nmap <silent> F :cnext<CR>
+nmap <silent> C :cnext<CR>
 nmap <silent> B :cprevious<CR>
 
 nmap <silent> <leader>b<space> :BuffergatorToggle<CR>
