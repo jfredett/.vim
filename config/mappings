@@ -27,3 +27,9 @@ vnoremap <silent>ii :<C-u>call IndTxtObj(1)<CR><Esc>gv
 " git blame
 vmap <Leader>g :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
 
+"run rspec test under cursor
+map <leader>r<space> :SweetVimRspecRunFocused<CR>
+"run rspec file
+map <leader>R<space> :SweetVimRspecRunFile<CR>
+"run last rspec test
+map <leader>rp<space> :SweetVimRspecRunPrevious<CR>
