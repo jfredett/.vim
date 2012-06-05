@@ -138,3 +138,6 @@
 	path = bundle/vimerl
 	url = git://github.com/oscarh/vimerl.git
   ignore = untracked
+[submodule "bundle/sweet-rspec"]
+	path = bundle/sweet-rspec
+	url = https://github.com/duskhacker/sweet-rspec-vim.git
