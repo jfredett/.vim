@@ -26,6 +26,7 @@ unmap <leader>d
 nnoremap ' `
 nnoremap ` '
 
+nmap <silent> <leader>t<space> yl<ESC>:Tab /"<CR>
 
 nmap <silent> <leader>a<space> :Ack '<cword>' -a<CR>
 
