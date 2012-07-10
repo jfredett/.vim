@@ -35,5 +35,6 @@ nmap <silent> B :cprevious<CR>
 
 nmap <silent> <leader>b<space> :BuffergatorToggle<CR>
 
+nnoremap <silent> <leader>af<space> 0f^lvt$"my<ESC>:Ack -a '<C-R>m' features/<CR>
 
 let maplocalleader = ","
