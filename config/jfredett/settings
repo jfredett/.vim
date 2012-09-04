@@ -33,6 +33,10 @@ let g:slimv_keybindings=2
 " Inform me of random whitespace
 set list
 set listchars=tab:▶\ ,eol:¬
-set listchars+=trail:◥
+set listchars+=trail:▶
 set listchars+=extends:❯
 set listchars+=precedes:❮
+
+"use the fancy unicode characters for powerline
+let g:Powerline_symbols = 'fancy'
+
