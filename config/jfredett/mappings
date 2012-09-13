@@ -33,6 +33,9 @@ nmap <silent> <leader>a<space> :Ack '<cword>' -a<CR>
 nmap <silent> C :cnext<CR>
 nmap <silent> B :cprevious<CR>
 
+nmap <silent> <C-N> :bn<CR>
+nmap <silent> <C-P> :bp<CR>
+
 nmap <silent> <leader>b<space> :BuffergatorToggle<CR>
 
 nnoremap <silent> <leader>af<space> 0f/llvt/h"my<ESC>:Ack -a '<C-R>m' features/<CR>
