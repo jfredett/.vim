@@ -40,6 +40,8 @@ nmap <silent> <leader>b<space> :BuffergatorToggle<CR>
 
 nnoremap <silent> <leader>af<space> 0f/llvt/h"my<ESC>:Ack -a '<C-R>m' features/<CR>
 
+nnoremap <silent> <leader>s<space> :call RunRspec('%', '')<CR>
+nnoremap <silent> <leader>ss<space> :call RunRspec('%', line('.'))<CR>
 
 
 let maplocalleader = ","

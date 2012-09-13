@@ -8,3 +8,33 @@ function! SwitchBackground()
   endif
   colorscheme solarized
 endfunction
+
+function! RunRspec(file, line)
+  let spec_file = expand(a:file)
+  if a:line
+    let spec_file .= ':' . a:line
+  endif
+
+  let spec_opts = "--no-color --require=~/.vim/config/jfredett/rspec_formatter.rb --format=RSpecFormatter"
+
+  let cmd = join(["bundle", "exec", "rspec", spec_file , spec_opts], ' ')
+  let new_efm = '\ %#-->\ %#%f:%l'
+
+  silent call RunSystem(cmd, new_efm)
+  execute 'copen'
+  execute 'redraw!'
+endfunction
+
+function! RunSystem(cmd, efm)
+  let old_makeprg = &l:makeprg
+  let old_errorformat = &l:errorformat
+
+  try
+    let &l:makeprg = a:cmd
+    let &l:errorformat = a:efm
+    execute 'make!'
+  finally
+    let &l:errorformat = old_errorformat
+    let &l:makeprg = old_makeprg
+  endtry
+endfunction
