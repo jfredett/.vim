@@ -1,4 +1,4 @@
-function! SwitchBackground() 
+function! SwitchBackground()
   if (g:background_style == 'dark')
     set background=light
     let g:background_style = 'light'
