@@ -32,8 +32,9 @@ let g:slimv_keybindings=2
 
 " Inform me of random whitespace
 set list
-set listchars=tab:▶\ ,eol:¬
-set listchars+=trail:▶
+set listchars+=tab:\ \  "ignore tabs
+set listchars+=eol:\    "ignore eol's.
+set listchars+=trail:·
 set listchars+=extends:❯
 set listchars+=precedes:❮
 
