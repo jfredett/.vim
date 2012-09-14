@@ -36,6 +36,9 @@ nmap <silent> B :cprevious<CR>
 nmap <silent> <C-N> :bn<CR>
 nmap <silent> <C-P> :bp<CR>
 
+"use tag-completion instead of omnicompletion
+inoremap <C-N> <C-X><C-]>
+
 nmap <silent> <leader>b<space> :BuffergatorToggle<CR>
 
 nnoremap <silent> <leader>af<space> 0f/llvt/h"my<ESC>:Ack -a '<C-R>m' features/<CR>
