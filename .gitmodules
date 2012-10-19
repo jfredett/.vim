@@ -153,3 +153,6 @@
 [submodule "bundle/typescript-vim"]
 	path = bundle/typescript-vim
 	url = git://github.com/leafgarland/typescript-vim.git
+[submodule "bundle/vim-monit"]
+	path = bundle/vim-monit
+	url = git://github.com/tmatilai/vim-monit.git
