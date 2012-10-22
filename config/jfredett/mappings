@@ -46,5 +46,6 @@ nnoremap <silent> <leader>af<space> 0f/llvt/h"my<ESC>:Ack -a '<C-R>m' features/<
 nnoremap <silent> <leader>s<space> :call RunRspec('%', '')<CR>
 nnoremap <silent> <leader>ss<space> :call RunRspec('%', line('.'))<CR>
 
+nnoremap <silent> <leader>fu<space> :GundoToggle<CR>
 
 let maplocalleader = ","

@@ -76,4 +76,9 @@ let vimclojure#NailgunClient = $HOME . "/.vim/lib/vimclojure-nailgun-client/ng"
 let vimclojure#SplitPos="bottom"
 let vimclojure#SplitSize=10
 
+" Set up persistent undo
+set undodir=~/.vim/undofile
+set undofile
+set undolevels=1000000
+set undoreload=10000
 
