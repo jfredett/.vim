@@ -156,3 +156,6 @@
 [submodule "bundle/vim-monit"]
 	path = bundle/vim-monit
 	url = git://github.com/tmatilai/vim-monit.git
+[submodule "bundle/gundo.vim"]
+  path = bundle/gundo.vim
+  url = git://github.com/sjl/gundo.vim.git
