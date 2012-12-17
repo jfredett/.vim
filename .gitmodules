@@ -70,10 +70,6 @@
 	path = bundle/matchit
 	url = https://github.com/mhz/vim-matchit.git
   ignore = untracked
-[submodule "bundle/vim-clojure"]
-	path = bundle/vim-clojure
-	url = git://github.com/vim-scripts/VimClojure.git
-  ignore = untracked
 [submodule "bundle/rubyblock-text-object"]
 	path = bundle/rubyblock-text-object
 	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
@@ -125,10 +121,6 @@
 [submodule "bundle/slimv"]
 	path = bundle/slimv
 	url = git://github.com/vim-scripts/slimv.vim.git
-  ignore = untracked
-[submodule "bundle/lein-vim"]
-	path = bundle/lein-vim
-	url = git://github.com/liquidz/lein-vim.git
   ignore = untracked
 [submodule "bundle/thrift"]
 	path = bundle/thrift
