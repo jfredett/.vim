@@ -12,11 +12,10 @@ make distclean
   --enable-mzschemeinterp=yes       \
   --with-modified-by="Joe Fredette" \
   --with-compiledby="$USER"         \
-  --enable-gui=no                   \
+  --enable-gui=gtk2                 \
   --disable-selinux                 \
   --enable-cscope                   \
-  --disable-gtktest                 \
-  --with-features=huge            
+  --with-features=huge
 
 RUBY_LIBS="-framework Ruby"
 
