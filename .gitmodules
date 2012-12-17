@@ -114,10 +114,6 @@
 	path = bundle/conqueterm
 	url = git://github.com/rosenfeld/conque-term.git
   ignore = untracked
-[submodule "bundle/slimv"]
-	path = bundle/slimv
-	url = git://github.com/vim-scripts/slimv.vim.git
-  ignore = untracked
 [submodule "bundle/thrift"]
 	path = bundle/thrift
 	url = git://github.com/sprsquish/thrift.vim.git
@@ -129,21 +125,32 @@
 [submodule "bundle/vim-jst"]
 	path = bundle/vim-jst
 	url = git://github.com/briancollins/vim-jst.git
+  ignore = untracked
 [submodule "bundle/yard"]
 	path = bundle/yard
 	url = git://github.com/postmodern/vim-yard.git
+  ignore = untracked
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = git://github.com/Lokaltog/vim-powerline.git
+  ignore = untracked
+[submodule "bundle/vim-autotag"]
+	path = bundle/vim-autotag
+	url = git://github.com/vim-scripts/AutoTag.git
+  ignore = untracked
 [submodule "bundle/typescript-vim"]
 	path = bundle/typescript-vim
 	url = git://github.com/leafgarland/typescript-vim.git
+  ignore = untracked
 [submodule "bundle/vim-monit"]
 	path = bundle/vim-monit
 	url = git://github.com/tmatilai/vim-monit.git
+  ignore = untracked
 [submodule "bundle/gundo.vim"]
   path = bundle/gundo.vim
   url = git://github.com/sjl/gundo.vim.git
+  ignore = untracked
 [submodule "bundle/nginx.vim"]
 	path = bundle/nginx.vim
 	url = git://github.com/vim-scripts/nginx.vim.git
+  ignore = untracked
