@@ -154,3 +154,6 @@
 	path = bundle/nginx.vim
 	url = git://github.com/vim-scripts/nginx.vim.git
   ignore = untracked
+[submodule "bundle/vim-clojure"]
+	path = bundle/vim-clojure
+	url = git://github.com/vim-scripts/VimClojure.git
