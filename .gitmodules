@@ -157,3 +157,6 @@
 [submodule "bundle/vim-clojure"]
 	path = bundle/vim-clojure
 	url = git://github.com/vim-scripts/VimClojure.git
+[submodule "bundle/paredit"]
+	path = bundle/paredit
+	url = git://github.com/vim-scripts/paredit.vim.git
