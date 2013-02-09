@@ -1,6 +1,6 @@
 [submodule "autoload/pathogen"]
 	path = bundle/pathogen
-	url = https://github.com/tpope/vim-pathogen.git
+	url = git://github.com/tpope/vim-pathogen.git
   ignore = untracked
 [submodule "bundle/rails"]
 	path = bundle/rails
@@ -40,19 +40,19 @@
   ignore = untracked
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized
   ignore = untracked
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
-	url = https://github.com/kchmck/vim-coffee-script.git
+	url = git://github.com/kchmck/vim-coffee-script.git
   ignore = untracked
 [submodule "colors/solarized"]
 	path = colors/solarized
-	url = https://github.com/altercation/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized
   ignore = untracked
 [submodule "bundle/coffee-script"]
 	path = bundle/coffee-script
-	url = https://github.com/kchmck/vim-coffee-script.git
+	url = git://github.com/kchmck/vim-coffee-script.git
   ignore = untracked
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
@@ -64,23 +64,23 @@
   ignore = untracked
 [submodule "bundle/taglist.vim"]
 	path = bundle/taglist.vim
-	url = https://github.com/vim-scripts/taglist.vim.git
+	url = git://github.com/vim-scripts/taglist.vim.git
   ignore = untracked
 [submodule "bundle/matchit"]
 	path = bundle/matchit
-	url = https://github.com/mhz/vim-matchit.git
+	url = git://github.com/tsaleh/vim-matchit.git
   ignore = untracked
 [submodule "bundle/rubyblock-text-object"]
 	path = bundle/rubyblock-text-object
-	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
+	url = git://github.com/nelstrom/vim-textobj-rubyblock.git
   ignore = untracked
 [submodule "bundle/indext-text-object"]
 	path = bundle/indext-text-object
-	url = https://github.com/michaeljsmith/vim-indent-object.git
+	url = git://github.com/michaeljsmith/vim-indent-object.git
   ignore = untracked
 [submodule "bundle/argument-text-object"]
 	path = bundle/argument-text-object
-	url = https://github.com/vim-scripts/argtextobj.vim.git
+	url = git://github.com/vim-scripts/argtextobj.vim.git
   ignore = untracked
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
@@ -88,11 +88,11 @@
   ignore = untracked
 [submodule "bundle/vim-textobj-user"]
 	path = bundle/vim-textobj-user
-	url = https://github.com/kana/vim-textobj-user
+	url = git://github.com/kana/vim-textobj-user
   ignore = untracked
 [submodule "bundle/vim-textobj-rubyblock.git"]
 	path = bundle/vim-textobj-rubyblock.git
-	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
+	url = git://github.com/nelstrom/vim-textobj-rubyblock.git
   ignore = untracked
 [submodule "bundle/c.vim"]
 	path = bundle/c.vim
