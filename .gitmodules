@@ -84,7 +84,7 @@
   ignore = untracked
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
-	url = git@github.com:vim-ruby/vim-ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
   ignore = untracked
 [submodule "bundle/vim-textobj-user"]
 	path = bundle/vim-textobj-user
