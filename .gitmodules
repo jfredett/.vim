@@ -160,3 +160,9 @@
 [submodule "bundle/paredit"]
 	path = bundle/paredit
 	url = git://github.com/vim-scripts/paredit.vim.git
+[submodule "bundle/vim-golang"]
+	path = bundle/vim-golang
+	url = git://github.com/jnwhiteh/vim-golang.git
+[submodule "bundle/vim-rust"]
+	path = bundle/vim-rust
+	url = git://github.com/bryanjswift/vim-rust.git
