@@ -1,24 +1,34 @@
-"load default (cli) settings/mappings
-source $VIM_PATH/config/settings
-source $VIM_PATH/config/mappings
-source $VIM_PATH/config/commands
-source $VIM_PATH/config/functions
-source $VIM_PATH/config/statusline
 
-if has("gui_running") && isdirectory($VIM_PATH . '/config/gui')
-  source $VIM_PATH/config/gui/settings
-  source $VIM_PATH/config/gui/functions
-  source $VIM_PATH/config/gui/mappings
-  source $VIM_PATH/config/gui/commands
-  source $VIM_PATH/config/gui/statusline
+source $VIM_PATH/helpers.vim
+
+
+function! SourceIfPresent(path)
+  if filereadable(a:path)
+    exec "source ".a:path
+  endif
+endfunction
+
+"load default ("cli") settings/mappings
+call SourceIfPresent( $VIM_PATH . "/config/settings")
+call SourceIfPresent( $VIM_PATH . "/config/mappings")
+call SourceIfPresent( $VIM_PATH . "/config/commands")
+call SourceIfPresent( $VIM_PATH . "/config/functions")
+call SourceIfPresent( $VIM_PATH . "/config/statusline")
+
+if has("gui_running") && isdirectory("$VIM_PATH/config/gui")
+  call SourceIfPresent($VIM_PATH . "/config/gui/settings")
+  call SourceIfPresent($VIM_PATH . "/config/gui/functions")
+  call SourceIfPresent($VIM_PATH . "/config/gui/mappings")
+  call SourceIfPresent($VIM_PATH . "/config/gui/commands")
+  call SourceIfPresent($VIM_PATH . "/config/gui/statusline")
 endif
 
 "load local override settings for the user
-if isdirectory($VIM_PATH . '/config/' . $USER)
-  source $VIM_PATH/config/$USER/settings
-  source $VIM_PATH/config/$USER/functions
-  source $VIM_PATH/config/$USER/mappings
-  source $VIM_PATH/config/$USER/commands
-  source $VIM_PATH/config/$USER/statusline
+if isdirectory("$VIM_PATH/config/$USER")
+  call SourceIfPresent($VIM_PATH . "config/$USER/settings")
+  call SourceIfPresent($VIM_PATH . "config/$USER/functions")
+  call SourceIfPresent($VIM_PATH . "config/$USER/mappings")
+  call SourceIfPresent($VIM_PATH . "config/$USER/commands")
+  call SourceIfPresent($VIM_PATH . "config/$USER/statusline")
 end
 
