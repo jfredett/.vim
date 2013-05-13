@@ -9,7 +9,7 @@ nmap <silent> <C-g> <ESC>:BG<CR>
 
 "match key as % sucks
 nmap  <leader>m %
-nmap  <leader>f zf%
+nmap  <leader>f<space> zf%
 
 "insert a 'debugger' on the line above the current
 nmap <silent> <leader>db Odebugger; 9001<ESC>=jj
