@@ -1,0 +1,17 @@
+" vim: set filetype=vim :
+
+" Languages
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'vim-scripts/c.vim'
+Bundle 'rodjek/vim-puppet'
+Bundle 'postmodern/vim-yard'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'sprsquish/thrift.vim'
+Bundle 'oscarh/vimerl'
+Bundle 'briancollins/vim-jst'
+Bundle 'leafgarland/typescript-vim'
+Bundle 'tmatilai/vim-monit'
+Bundle 'vim-scripts/nginx.vim'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'bryanjswift/vim-rust'

@@ -1,0 +1,5 @@
+" vim: set filetype=vim :
+
+" Tools
+Bundle 'tpope/vim-rake'
+Bundle 'tpope/vim-fugitive'

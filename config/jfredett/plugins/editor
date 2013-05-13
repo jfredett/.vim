@@ -1,0 +1,14 @@
+" vim: set filetype=vim :
+
+" Editor
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-endwise'
+Bundle 'taglist.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'mhz/vim-matchit'
+Bundle 'michaeljsmith/vim-indent-object'
+Bundle 'kana/vim-textobj-user'
+Bundle 'godlygeek/tabular'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'sjl/gundo.vim'

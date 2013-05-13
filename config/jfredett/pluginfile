@@ -1,0 +1,5 @@
+" vim: set filetype=vim :
+"
+for plugin_file in glob($VIM_PATH/config/$USER/plugins/*)
+  call Source(plugin_file)
+endfor
