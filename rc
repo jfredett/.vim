@@ -1,34 +1,28 @@
+" vim: set filetype=vim :
 
 source $VIM_PATH/helpers.vim
 
-
-function! SourceIfPresent(path)
-  if filereadable(a:path)
-    exec "source ".a:path
-  endif
-endfunction
-
 "load default ("cli") settings/mappings
-call SourceIfPresent( $VIM_PATH . "/config/settings")
-call SourceIfPresent( $VIM_PATH . "/config/mappings")
-call SourceIfPresent( $VIM_PATH . "/config/commands")
-call SourceIfPresent( $VIM_PATH . "/config/functions")
-call SourceIfPresent( $VIM_PATH . "/config/statusline")
+call SourceIfPresent("/config/settings")
+call SourceIfPresent("/config/mappings")
+call SourceIfPresent("/config/commands")
+call SourceIfPresent("/config/functions")
+call SourceIfPresent("/config/statusline")
 
 if has("gui_running") && isdirectory("$VIM_PATH/config/gui")
-  call SourceIfPresent($VIM_PATH . "/config/gui/settings")
-  call SourceIfPresent($VIM_PATH . "/config/gui/functions")
-  call SourceIfPresent($VIM_PATH . "/config/gui/mappings")
-  call SourceIfPresent($VIM_PATH . "/config/gui/commands")
-  call SourceIfPresent($VIM_PATH . "/config/gui/statusline")
+  call SourceIfPresent("/config/gui/settings")
+  call SourceIfPresent("/config/gui/functions")
+  call SourceIfPresent("/config/gui/mappings")
+  call SourceIfPresent("/config/gui/commands")
+  call SourceIfPresent("/config/gui/statusline")
 endif
 
 "load local override settings for the user
 if isdirectory("$VIM_PATH/config/$USER")
-  call SourceIfPresent($VIM_PATH . "config/$USER/settings")
-  call SourceIfPresent($VIM_PATH . "config/$USER/functions")
-  call SourceIfPresent($VIM_PATH . "config/$USER/mappings")
-  call SourceIfPresent($VIM_PATH . "config/$USER/commands")
-  call SourceIfPresent($VIM_PATH . "config/$USER/statusline")
+  call SourceIfPresent("config/$USER/settings")
+  call SourceIfPresent("config/$USER/functions")
+  call SourceIfPresent("config/$USER/mappings")
+  call SourceIfPresent("config/$USER/commands")
+  call SourceIfPresent("config/$USER/statusline")
 end
 
