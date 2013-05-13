@@ -74,9 +74,10 @@ let g:vimclojure#HighlightContrib = 1
 let g:vimclojure#DynamicHighlighting = 1
 let g:vimclojure#ParenRainbow = 1
 let g:vimclojure#WantNailgun = 1
-let g:vimclojure#NailgunClient = $HOME . "/.vim/lib/vimclojure-nailgun-client/ng"
 let g:vimclojure#SplitPos="bottom"
 let g:vimclojure#SplitSize=10
+" turn on paredit mode
+let g:paredit_mode = 1
 
 " Set up persistent undo
 set undodir=~/.vim/undofile
