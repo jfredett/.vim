@@ -8,7 +8,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
-source $VIM_PATH/config/vundle
-source $VIM_PATH/config/$USER/vundle
+call Source('config/pluginfile')
+call Source('config/$USER/pluginfile')
 
 filetype plugin indent on     " required!
