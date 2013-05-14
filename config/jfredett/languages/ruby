@@ -1,0 +1,6 @@
+"insert a 'debugger' on the line above the current
+nmap <silent> <leader>db Odebugger; 9001<ESC>=jj
+
+"insert a 'binding.pry' on the line above the current
+nmap <silent> <leader>r<space> Obinding.pry<ESC>=jj
+
