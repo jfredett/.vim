@@ -3,18 +3,18 @@
 source $VIM_PATH/helpers.vim
 
 "load default ("cli") settings/mappings
-call SourceIfPresent("/config/settings")
-call SourceIfPresent("/config/mappings")
-call SourceIfPresent("/config/commands")
-call SourceIfPresent("/config/functions")
-call SourceIfPresent("/config/statusline")
+call SourceIfPresent("config/settings")
+call SourceIfPresent("config/mappings")
+call SourceIfPresent("config/commands")
+call SourceIfPresent("config/functions")
+call SourceIfPresent("config/statusline")
 
-if has("gui_running") && isdirectory("$VIM_PATH/config/gui")
-  call SourceIfPresent("/config/gui/settings")
-  call SourceIfPresent("/config/gui/functions")
-  call SourceIfPresent("/config/gui/mappings")
-  call SourceIfPresent("/config/gui/commands")
-  call SourceIfPresent("/config/gui/statusline")
+if has("gui_running") && isdirectory("$VIM_PATHconfig/gui")
+  call SourceIfPresent("config/gui/settings")
+  call SourceIfPresent("config/gui/functions")
+  call SourceIfPresent("config/gui/mappings")
+  call SourceIfPresent("config/gui/commands")
+  call SourceIfPresent("config/gui/statusline")
 endif
 
 "load local override settings for the user
