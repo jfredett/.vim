@@ -7,5 +7,5 @@ endfunction
 
 " Source using the base $VIM_PATH
 function! Source(path)
-  exec "source " . $VIM_PATH . a:path
+  exec "source " . $VIM_PATH . '/' . a:path
 endfunction
