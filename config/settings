@@ -1,14 +1,67 @@
-" vim: set filetype=vim :
+" syntax highlighting
+syntax on
+set t_Co=256
 
-set nocompatible               " be iMproved
-filetype off                   " required!
+" better buffer management
+set hidden
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+let g:solarized_contrast='high'
+let g:solarized_termcolors=256
 
-Bundle 'gmarik/vundle'
+set background=dark
+colorscheme solarized
 
-call Source('config/pluginfile')
-call Source('config/$USER/pluginfile')
+"always show the status line
+set laststatus=2
 
-filetype plugin indent on     " required!
+set backspace=indent,eol,start
+
+" 80 characters, damnit
+set textwidth=80
+
+" Wrapping
+set wrap
+
+" Highlight the line the cursor is on
+set cursorline
+
+" Show possible command line completions
+set wildmenu
+set wildmode=list:longest
+
+" Line numbers
+set number
+
+" Longer history (default is 20)
+set history=1000
+
+" Basic tab behavior
+set autoindent
+set expandtab
+set smarttab
+set shiftwidth=2
+set tabstop=2
+
+" Split toward the bottom right
+set splitbelow
+set splitright
+
+" vimclojure stuff. stolen^H^H^H^H^H^H *hackhack* borrowed from daveray's
+" vimclojure-easy. All proper props to him
+let g:vimclojure#FuzzyIndent = 1
+let g:vimclojure#HighlightBuiltins = 1
+let g:vimclojure#HighlightContrib = 1
+let g:vimclojure#DynamicHighlighting = 1
+let g:vimclojure#ParenRainbow = 1
+let g:vimclojure#WantNailgun = 1
+let g:vimclojure#SplitPos="bottom"
+let g:vimclojure#SplitSize=10
+" turn on paredit mode
+let g:paredit_mode = 1
+
+" Set up persistent undo
+set undodir=~/.vim/undofile
+set undofile
+set undolevels=1000000
+set undoreload=10000
+

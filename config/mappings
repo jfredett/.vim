@@ -1,0 +1,29 @@
+let mapleader = ","
+" Reveal current file in tree
+map <leader>R :NERDTreeFind<CR>
+
+" Open tree on current directory
+map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+" open taglist
+map <leader>tl <esc>:TlistToggle<CR>
+
+" Symbols and strings
+nmap <leader>: ds"i:<Esc>e
+nmap <leader>" bhxcsw"
+
+" object && object.method
+map <leader>& mayB`ai<space>&&<space><esc>pl
+
+" Make Y consistent with D, C
+nnoremap Y y$
+
+
+" Text object for indented code
+onoremap <silent>ai :<C-u>call IndTxtObj(0)<CR>
+onoremap <silent>ii :<C-u>call IndTxtObj(1)<CR>
+vnoremap <silent>ai :<C-u>call IndTxtObj(0)<CR><Esc>gv
+vnoremap <silent>ii :<C-u>call IndTxtObj(1)<CR><Esc>gv
+
+" git blame
+vmap <Leader>g :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
+
