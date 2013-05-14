@@ -1,7 +1,7 @@
 let mapleader = ","
 
-" Open tree on current directory
-map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+nmap <silent> <leader>d<space> :execute 'NERDTreeToggle '. getcwd()<CR>
+
 " open taglist
 map <leader>tl <esc>:TlistToggle<CR>
 
