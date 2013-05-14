@@ -1,0 +1,2 @@
+"use the second set of keybinds, to avoid clashing
+let g:slimv_keybindings=2

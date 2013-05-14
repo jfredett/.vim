@@ -13,9 +13,6 @@ set shortmess=aIA
 
 let g:C_MapLeader = ','
 
-"use the second set of keybinds, to avoid clashing
-let g:slimv_keybindings=2
-
 " Inform me of random whitespace
 set list
 set listchars+=tab:\ \  "ignore tabs
@@ -26,4 +23,3 @@ set listchars+=precedes:❮
 
 "use the fancy unicode characters for powerline
 let g:Powerline_symbols = 'fancy'
-
