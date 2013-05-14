@@ -1,6 +1,6 @@
 " vim: set filetype=vim :
 
-for plugin_file in glob($VIM_PATH/config/plugins/*)
-  call Source(plugin_file)
+for plugin_file in split(glob("$VIM_PATH/config/plugins/*"))
+  exec "source " . plugin_file
 endfor
 
