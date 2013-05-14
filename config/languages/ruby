@@ -1,5 +1,4 @@
-" re-source vimrc when it's modified
-autocmd! bufwritepost .vimrc source %
+" vim: set filetype=vim :
 
 " recognize Capfile, Gemfile, treetop
 autocmd BufRead,BufNewFile Capfile set filetype=ruby
@@ -7,8 +6,3 @@ autocmd BufRead,BufNewFile Gemfile set filetype=ruby
 autocmd BufRead,BufNewFile *.treetop set filetype=treetop
 autocmd BufRead,BufNewFile *.tt set filetype=treetop
 autocmd BufRead,BufNewFile *.feature set filetype=cucumber
-
-" recognize files in the .vim path even w/o extensions
-autocmd BufRead $VIM_PATH/* set filetype=vim
-autocmd BufRead $VIM_PATH/config/*/* set filetype=vim
-

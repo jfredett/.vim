@@ -1,15 +1,5 @@
-" syntax highlighting
-syntax on
-set t_Co=256
-
 " better buffer management
 set hidden
-
-let g:solarized_contrast='high'
-let g:solarized_termcolors=256
-
-set background=dark
-colorscheme solarized
 
 "always show the status line
 set laststatus=2
@@ -46,22 +36,8 @@ set tabstop=2
 set splitbelow
 set splitright
 
-" vimclojure stuff. stolen^H^H^H^H^H^H *hackhack* borrowed from daveray's
-" vimclojure-easy. All proper props to him
-let g:vimclojure#FuzzyIndent = 1
-let g:vimclojure#HighlightBuiltins = 1
-let g:vimclojure#HighlightContrib = 1
-let g:vimclojure#DynamicHighlighting = 1
-let g:vimclojure#ParenRainbow = 1
-let g:vimclojure#WantNailgun = 1
-let g:vimclojure#SplitPos="bottom"
-let g:vimclojure#SplitSize=10
-" turn on paredit mode
-let g:paredit_mode = 1
-
 " Set up persistent undo
 set undodir=~/.vim/undofile
 set undofile
 set undolevels=1000000
 set undoreload=10000
-

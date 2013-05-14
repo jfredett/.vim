@@ -1,14 +1,6 @@
-function! Camelize(name)
-  return substitute(a:name, '\v%(^(.)|_(.))', '\u\1\u\2', 'g')
-endfunction
+" vim: set filetype=vim :
 
-function! ModelName()
-  return substitute(Filename('', 'model'), 's_controller', '', '')
-endfunction
-
-function! CamelModelName()
-  return Camelize(ModelName())
-endfunction
+"A text-object for indented code
 
 function! IndTxtObj(inner)
   if &filetype == 'haml' || &filetype == 'sass' || &filetype == 'python'
@@ -47,3 +39,11 @@ function! IndTxtObj(inner)
   endif
   normal! $
 endfunction
+
+" Text object for indented code
+onoremap <silent>ai :<C-u>call IndTxtObj(0)<CR>
+onoremap <silent>ii :<C-u>call IndTxtObj(1)<CR>
+vnoremap <silent>ai :<C-u>call IndTxtObj(0)<CR><Esc>gv
+vnoremap <silent>ii :<C-u>call IndTxtObj(1)<CR><Esc>gv
+
+

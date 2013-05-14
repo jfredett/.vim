@@ -13,7 +13,7 @@ set nocompatible
 
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=$VIM_PATH/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
@@ -23,8 +23,6 @@ call Source('config/$USER/pluginfile')
 
 filetype plugin indent on     " required!
 
-call Source('config/languages')
-call Source('config/commands')
-call Source('config/functions')
-call Source('config/mappings')
-call Source('config/statusline')
+call Source('config/colors.vim')
+call Source('config/languages.vim')
+call Source('config/mappings.vim')

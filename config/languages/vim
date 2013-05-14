@@ -1,0 +1,5 @@
+" vim: set filetype=vim :
+
+" recognize files in the .vim path even w/o extensions
+autocmd BufRead $VIM_PATH/* set filetype=vim
+autocmd BufRead $VIM_PATH/config/*/* set filetype=vim
