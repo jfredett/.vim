@@ -30,3 +30,7 @@ call Source('config/settings.vim')
 call Source('config/colors.vim')
 call Source('config/languages.vim')
 call Source('config/mappings.vim')
+
+"load $USER's configs
+
+call Source('config/$USER/config.vim')
