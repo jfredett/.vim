@@ -1,5 +1,2 @@
 " vim: set filetype=vim :
-"
-for plugin_file in split(glob("$VIM_PATH/config/$USER/plugins/*"))
-  exec "source " . plugin_file
-endfor
+call SourceAllFrom("config/$USER/plugins")

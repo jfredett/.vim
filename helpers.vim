@@ -14,3 +14,12 @@ endfunction
 function! RelativePath(path)
   return $VIM_PATH . "/" . a:path
 endfunction
+
+" Sources every file from a given directory
+"
+" NB. Duplicates a bit from Source, make sure they stay synced.
+function! SourceAllFrom(path)
+  for plugin_file in split(glob(RelativePath(a:path) . '/*'))
+    exec "source " . plugin_file
+  endfor
+endfunction
