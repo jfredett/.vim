@@ -26,6 +26,7 @@ filetype plugin indent on     " required!
 "enable powerline
 set rtp+=$VIM_PATH/powerline/bindings/vim
 
+call Source('config/settings.vim')
 call Source('config/colors.vim')
 call Source('config/languages.vim')
 call Source('config/mappings.vim')
