@@ -1,0 +1,42 @@
+#!/bin/bash
+
+make clean
+make distclean
+
+if [ $OSX ] ; then
+  ./configure                         \
+    --enable-pythoninterp=yes         \
+    --enable-python3interp=yes        \
+    --enable-rubyinterp=yes           \
+    --enable-multibyte=yes            \
+    --enable-luainterp=yes            \
+    --enable-mzschemeinterp=yes       \
+    --with-modified-by="Joe Fredette" \
+    --with-compiledby="$USER"         \
+    --enable-gui=gtk2                 \
+    --disable-selinux                 \
+    --enable-cscope                   \
+    --with-features=huge
+
+  RUBY_LIBS="-framework Ruby"
+fi
+
+if [ $LINUX ] ; then
+  ./configure                           \
+    --enable-pythoninterp=yes           \
+    --enable-python3interp=yes          \
+    --enable-rubyinterp=yes             \
+    --enable-multibyte=yes              \
+    --enable-luainterp=yes              \
+    --enable-mzschemeinterp=yes         \
+    --with-modified-by="Joe Fredette"   \
+    --with-compiledby="$USER"           \
+    --with-ruby-command='/usr/bin/ruby' \
+    --enable-gui=gtk2                   \
+    --disable-selinux                   \
+    --enable-cscope                     \
+    --with-features=huge
+fi
+
+make
+
