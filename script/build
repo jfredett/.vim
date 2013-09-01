@@ -25,19 +25,19 @@ if [ $OSX ] ; then
 fi
 
 if [ $LINUX ] ; then
-  ./configure                           \
-    --enable-pythoninterp=yes           \
-    --enable-python3interp=yes          \
-    --enable-rubyinterp=yes             \
-    --enable-multibyte=yes              \
-    --enable-luainterp=yes              \
-    --enable-mzschemeinterp=yes         \
-    --with-modified-by="Joe Fredette"   \
-    --with-compiledby="$USER"           \
-    --with-ruby-command='/usr/bin/ruby' \
-    --enable-gui=gtk2                   \
-    --disable-selinux                   \
-    --enable-cscope                     \
+  ./configure                               \
+    --enable-pythoninterp=yes               \
+    --enable-python3interp=yes              \
+    --enable-rubyinterp=yes                 \
+    --enable-multibyte=yes                  \
+    --enable-luainterp=yes                  \
+    --enable-mzschemeinterp=yes             \
+    --with-modified-by="Joe Fredette"       \
+    --with-compiledby="$USER"               \
+    --with-ruby-command='/usr/bin/env ruby' \
+    --enable-gui=gtk2                       \
+    --disable-selinux                       \
+    --enable-cscope                         \
     --with-features=huge
 fi
 
