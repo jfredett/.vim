@@ -41,5 +41,5 @@ if [ $LINUX ] ; then
     --with-features=huge
 fi
 
-make
+make -j 8
 
