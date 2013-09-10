@@ -20,6 +20,9 @@ nmap <silent> B :cprevious<CR>
 nmap <silent> <C-N> :bn<CR>
 nmap <silent> <C-P> :bp<CR>
 
+" the foldlevel is because :Gstatus sets it to 1 for some (inexplicable) reason
+nmap <silent> <leader>gs<space> :Gstatus<CR>:set foldlevel=20<CR>
+
 "use tag-completion instead of omnicompletion
 inoremap <C-N> <C-X><C-]>
 
