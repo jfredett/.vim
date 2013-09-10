@@ -4,3 +4,10 @@ nmap <silent> <leader>db Odebugger; 9001<ESC>=jj
 "insert a 'binding.pry' on the line above the current
 nmap <silent> <leader>r<space> Obinding.pry<ESC>=jj
 
+map <leader>rf<space> :call RunCurrentSpecFile()<CR>
+map <leader>rr<space> :call RunNearestSpec()<CR>
+map <leader>rl<space> :call RunLastSpec()<CR>
+map <leader>ra<space> :call RunAllSpecs()<CR>
+
+map <leader>co<space> :Copen<CR>
+map <leader>cc<space> :Copen!<CR>
