@@ -22,6 +22,7 @@ nmap <silent> <C-P> :bp<CR>
 
 " the foldlevel is because :Gstatus sets it to 1 for some (inexplicable) reason
 nmap <silent> <leader>gs<space> :Gstatus<CR>:set foldlevel=20<CR>
+nmap <silent> <leader>gp<space> :Dispatch git push --quiet && echo "Pushed"<CR>
 
 "use tag-completion instead of omnicompletion
 inoremap <C-N> <C-X><C-]>
