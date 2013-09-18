@@ -9,5 +9,7 @@ map <leader>rr<space> :call RunNearestSpec()<CR>
 map <leader>rl<space> :call RunLastSpec()<CR>
 map <leader>ra<space> :call RunAllSpecs()<CR>
 
+map <leader>rc<space> :Dispatch rake rubocop 2>/dev/null<CR>
+
 map <leader>co<space> :Copen<CR>
 map <leader>cc<space> :Copen!<CR>
