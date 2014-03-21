@@ -17,3 +17,8 @@ Bundle 'jnwhiteh/vim-golang'
 Bundle 'bryanjswift/vim-rust'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'Rykka/riv.vim'
+
+" clojure
+Bundle 'tpope/vim-fireplace'
+Bundle 'tpope/vim-classpath'
+Bundle 'guns/vim-clojure-static'
