@@ -27,6 +27,10 @@ nmap <silent> <leader>gp<space> :Dispatch git push --quiet && echo "Pushed"<CR>
 "use tag-completion instead of omnicompletion
 inoremap <C-N> <C-X><C-]>
 
+" Remap ^A -> ^S so it works in tmux
+noremap <C-S> <C-A>
+
+
 nnoremap <silent> <leader>fu<space> :GundoToggle<CR>
 
 let maplocalleader = ","
