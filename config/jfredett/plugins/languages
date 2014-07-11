@@ -25,3 +25,6 @@ Bundle 'guns/vim-clojure-static'
 " C
 Bundle 'vim-scripts/c.vim'
 
+" Idris
+Bundle 'idris-hackers/idris-vim'
+
