@@ -3,7 +3,6 @@
 " Languages
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'vim-ruby/vim-ruby'
-Bundle 'vim-scripts/c.vim'
 Bundle 'rodjek/vim-puppet'
 Bundle 'postmodern/vim-yard'
 Bundle 'nelstrom/vim-textobj-rubyblock'
@@ -22,3 +21,7 @@ Bundle 'Rykka/riv.vim'
 Bundle 'tpope/vim-fireplace'
 Bundle 'tpope/vim-classpath'
 Bundle 'guns/vim-clojure-static'
+
+" C
+Bundle 'vim-scripts/c.vim'
+
