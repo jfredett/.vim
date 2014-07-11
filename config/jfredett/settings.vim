@@ -23,3 +23,9 @@ set listchars+=precedes:❮
 
 "use the fancy unicode characters for powerline
 let g:Powerline_symbols = 'fancy'
+
+"syntastic settings
+let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+let g:syntastic_enable_signs = 1
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '⚠'
