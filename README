@@ -1,3 +1,63 @@
 # .vim
 
 A collection of configuration for vim, including some loose vimscript and scripts for building vim from source.
+
+## Usage
+
+First, ensure you have vim installed with the `-huge` option set. If you don't
+know what this means, then you should learn how about that first.
+
+I recommend self-compiling vim so you get the latest and greatest. It's pretty
+easy to build from source, and I've even included a script (`script/build`)
+which can be linked into the source directory for vim, and executes with either
+
+    OSX=1 bash build
+
+or
+
+    LINUX=1 bash build
+
+You might have to chase down some dependencies, but this compiles w/ ruby,
+python, perl, and lua support, as well as some other options to make things more
+pleasant.
+
+Now clone this repo to `.vim` in your home directory (you may rename it if
+you wish, just set `$VIM_PATH` to the appropriate directory below). Note that
+these scripts assume a linux or OSX operating system, I have no idea what will
+happen on windows.
+
+Next, set `$VIM_PATH` as a global environment variable in your appropriate shell
+rc file, this should be set to `/home/<username>/.vim` or the equivalent for
+OSX. If you decided not to name the directory `.vim`, then make sure you use
+whatever you named it. I will assume you named it `.vim` for the purpose of this
+readme
+
+Next, ensure $USER is set (just `echo $USER`), it is almost certainly set, but
+it can't hurt to double check. Following that, create a subdirectory of
+`.vim/config` with that user name. Copy in the `config.vim` file from the
+example user-config directory (that is, `.vim/config/jfredett/config.vim`). This
+directory will be used for personal overrides to the defaults. In this way, new
+default changes can be added, but your overrides will always 'win' in case of
+conflicts. If you don't want to get that detailed, the defaults are pretty
+usable, my config is included this repo as an example of what can be done.
+
+Now, link `.vim/rc` to `~/.vimrc` -- the name is important, here, vim looks only
+for `.vimrc` when starting console vim. Note that I don't use gvim, and I don't
+know what will happen if you try to use the console vim thing w/ gvim, and also
+gvim is silly, just use console vim. <3
+
+Finally, start up vim and run `:BundleIntall` to get all the plugins squared up.
+This takes a minute or two depending on your internet connection, but once it's
+done, restart vim and go to town.
+
+## If you use the example user config
+
+You'll need to set up a powerline font. The powerline repo at
+`Lokaltag/vim-powerline` has instructions for how to do that. You just run his
+script on the font of your choosing, install the new font, and set your terminal
+emulator to use that font.
+
+## Final words
+
+I probably missed something, but that's the gist. If you notice something that
+needs further explanation, make an issue and I'll help explain it.
