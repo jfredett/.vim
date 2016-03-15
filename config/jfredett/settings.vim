@@ -22,7 +22,7 @@ set listchars+=extends:❯
 set listchars+=precedes:❮
 
 "use the fancy unicode characters for powerline
-let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'compatible'
 
 "syntastic settings
 let g:syntastic_ruby_checkers = ['mri', 'rubocop']
