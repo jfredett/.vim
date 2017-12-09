@@ -12,7 +12,6 @@ Bundle 'leafgarland/typescript-vim'
 Bundle 'tmatilai/vim-monit'
 Bundle 'vim-scripts/nginx.vim'
 Bundle 'jnwhiteh/vim-golang'
-Bundle 'bryanjswift/vim-rust'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'Rykka/riv.vim'
 
@@ -27,3 +26,6 @@ Bundle 'vim-scripts/c.vim'
 " Idris
 Bundle 'idris-hackers/idris-vim'
 
+" Rust
+Bundle 'rust-lang/rust.vim'
+Bundle 'timonv/vim-cargo'
