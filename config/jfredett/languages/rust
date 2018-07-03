@@ -1,0 +1,11 @@
+map <leader>rb<space> :CargoBuild<CR>
+map <leader>rt<space> :CargoTest<CR>
+map <leader>rr<space> :CargoRun<CR>
+
+set hidden
+let g:racer_cmd = "/home/jfredett/.cargo/bin/racer"
+let g:racer_experimental_completer = 1
+
+au FileType rust nmap <leader>dd <Plug>(rust-def)
+au FileType rust nmap <leader>ss <Plug>(rust-def-split)
+au FileType rust nmap <leader>vv <Plug>(rust-def-vertical)

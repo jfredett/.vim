@@ -29,3 +29,4 @@ Bundle 'idris-hackers/idris-vim'
 " Rust
 Bundle 'rust-lang/rust.vim'
 Bundle 'timonv/vim-cargo'
+Bundle 'racer-rust/vim-racer'

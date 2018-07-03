@@ -3,3 +3,4 @@
 " Tools
 Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-fugitive'
+Bundle 'jremmen/vim-ripgrep'
