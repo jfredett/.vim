@@ -27,6 +27,9 @@ nmap <silent> <leader>gp<space> :Dispatch git push --quiet && echo "Pushed"<CR>
 "use tag-completion instead of omnicompletion
 inoremap <C-N> <C-X><C-]>
 
+" map ^j -> esc
+inoremap <C-j> <ESC>
+
 " Remap ^A -> ^S so it works in tmux
 noremap <C-S> <C-A>
 
