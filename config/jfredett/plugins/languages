@@ -29,4 +29,9 @@ Bundle 'idris-hackers/idris-vim'
 " Rust
 Bundle 'rust-lang/rust.vim'
 Bundle 'timonv/vim-cargo'
-Bundle 'racer-rust/vim-racer'
+"Bundle 'racer-rust/vim-racer'
+Bundle 'neoclide/coc.nvim'
+
+
+" Terraform
+Plugin 'hashivim/vim-terraform'
