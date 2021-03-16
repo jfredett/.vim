@@ -5,4 +5,4 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-haml'
 Bundle 'thoughtbot/vim-rspec'
-
+Bundle 'MaxMEllon/vim-jsx-pretty'
