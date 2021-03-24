@@ -32,6 +32,9 @@ Bundle 'timonv/vim-cargo'
 "Bundle 'racer-rust/vim-racer'
 Bundle 'neoclide/coc.nvim'
 
+" Zig
+Bundle 'ziglang/zig.vim'
+
 
 " Terraform
 Plugin 'hashivim/vim-terraform'
